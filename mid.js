@@ -15,11 +15,22 @@
 // for(let i = 0; i < messages.length; i++) {
 //     messages[i].innerText = "Hello";
 // }
+
+//DOM Manupulation
 title.style.color = "red";
 title.style.backgroundColor = "black";
 
+//ON click
+// let btn = document.getElementById("btn");
+// let result = document.getElementById("heading2");
+// btn.onclick = function(){
+//     result.innerText = "Button Clicked!"
+// }
+//addEventListerner
 let btn = document.getElementById("btn");
-let result = document.getElementById("heading2");
-btn.onclick = function(){
-    result.innerText = "Button Clicked!"
-}
+let heading = document.getElementById("heading2");
+btn.addEventListener("click", function() {
+    heading.innerText = "Button Clicked!";
+});
+
+
