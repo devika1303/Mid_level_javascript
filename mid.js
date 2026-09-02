@@ -32,5 +32,10 @@ let heading = document.getElementById("heading2");
 btn.addEventListener("click", function() {
     heading.innerText = "Button Clicked!";
 });
-
-
+// event onject
+btn.addEventListener("click", function(event){
+    console.log(event.type);
+});
+btn.addEventListener("click", function(events) {
+    console.log(events.target);
+});
