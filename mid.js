@@ -32,7 +32,7 @@ let heading = document.getElementById("heading2");
 btn.addEventListener("click", function() {
     heading.innerText = "Button Clicked!";
 });
-// event object
+// event types
 btn.addEventListener("click", function(event){
     console.log(event.type);
 });
@@ -53,5 +53,13 @@ input.addEventListener("keyup", function(event) {
 });
 //input
 input.addEventListener("input", function(event) {
+    console.log(input.value);
+});
+//charector counting
+input.addEventListener("input", function(event) {
+    console.log(input.value.length);
+});
+//change event
+input.addEventListener("change", function() {
     console.log(input.value);
 });
