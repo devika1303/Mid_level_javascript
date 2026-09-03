@@ -32,10 +32,26 @@ let heading = document.getElementById("heading2");
 btn.addEventListener("click", function() {
     heading.innerText = "Button Clicked!";
 });
-// event onject
+// event object
 btn.addEventListener("click", function(event){
     console.log(event.type);
 });
 btn.addEventListener("click", function(events) {
     console.log(events.target);
+});
+btn.addEventListener("mouseover", function(event) {
+    console.log("Mouse is on button");
+});
+let input = document.getElementById("name");
+//key down
+input.addEventListener("keydown", function(event) {
+    console.log(event.key);
+});
+//key up
+input.addEventListener("keyup", function(event) {
+    console.log(event.key);
+});
+//input
+input.addEventListener("input", function(event) {
+    console.log(input.value);
 });
