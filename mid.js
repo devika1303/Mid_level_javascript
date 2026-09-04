@@ -64,8 +64,16 @@
 //     console.log(input.value);
 // });
 
-//Theme changer
-const button = document.getElementById("themebtn");
-button.addEventListener("click", () =>{
-    document.body.classList.toggle("dark")
+// //Theme changer
+// const button = document.getElementById("themebtn");
+// button.addEventListener("click", () =>{
+//     document.body.classList.toggle("dark")
+// });
+
+//counter app
+let count = 0;
+const display = document.getElementById("count");
+document.getElementById("add").addEventListener("click", () => {
+    count++;
+    display.textContent=count;
 });
