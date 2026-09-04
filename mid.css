@@ -1,3 +1,7 @@
-h1{
+/* h1{
     align-items: center;
+} */
+.dark{
+    background: black;
+    color: white;
 }

@@ -16,9 +16,9 @@
 //     messages[i].innerText = "Hello";
 // }
 
-//DOM Manupulation
-title.style.color = "red";
-title.style.backgroundColor = "black";
+// //DOM Manupulation
+// title.style.color = "red";
+// title.style.backgroundColor = "black";
 
 //ON click
 // let btn = document.getElementById("btn");
@@ -26,40 +26,46 @@ title.style.backgroundColor = "black";
 // btn.onclick = function(){
 //     result.innerText = "Button Clicked!"
 // }
-//addEventListerner
-let btn = document.getElementById("btn");
-let heading = document.getElementById("heading2");
-btn.addEventListener("click", function() {
-    heading.innerText = "Button Clicked!";
-});
-// event types
-btn.addEventListener("click", function(event){
-    console.log(event.type);
-});
-btn.addEventListener("click", function(events) {
-    console.log(events.target);
-});
-btn.addEventListener("mouseover", function(event) {
-    console.log("Mouse is on button");
-});
-let input = document.getElementById("name");
-//key down
-input.addEventListener("keydown", function(event) {
-    console.log(event.key);
-});
-//key up
-input.addEventListener("keyup", function(event) {
-    console.log(event.key);
-});
-//input
-input.addEventListener("input", function(event) {
-    console.log(input.value);
-});
-//charector counting
-input.addEventListener("input", function(event) {
-    console.log(input.value.length);
-});
-//change event
-input.addEventListener("change", function() {
-    console.log(input.value);
+// //addEventListerner
+// let btn = document.getElementById("btn");
+// let heading = document.getElementById("heading2");
+// btn.addEventListener("click", function() {
+//     heading.innerText = "Button Clicked!";
+// });
+// // event types
+// btn.addEventListener("click", function(event){
+//     console.log(event.type);
+// });
+// btn.addEventListener("click", function(events) {
+//     console.log(events.target);
+// });
+// btn.addEventListener("mouseover", function(event) {
+//     console.log("Mouse is on button");
+// });
+// let input = document.getElementById("name");
+// //key down
+// input.addEventListener("keydown", function(event) {
+//     console.log(event.key);
+// });
+// //key up
+// input.addEventListener("keyup", function(event) {
+//     console.log(event.key);
+// });
+// //input
+// input.addEventListener("input", function(event) {
+//     console.log(input.value);
+// });
+// //charector counting
+// input.addEventListener("input", function(event) {
+//     console.log(input.value.length);
+// });
+// //change event
+// input.addEventListener("change", function() {
+//     console.log(input.value);
+// });
+
+//Theme changer
+const button = document.getElementById("themebtn");
+button.addEventListener("click", () =>{
+    document.body.classList.toggle("dark")
 });
