@@ -104,9 +104,23 @@
 // let message = greeting;
 // message();
 
-//callback queue
-console.log("Start");
-setTimeout(() => {
-console.log("Timer");
-}, 3000);
-console.log("End");
+// //callback queue
+// console.log("Start");
+// setTimeout(() => {
+// console.log("Timer");
+// }, 3000);
+// console.log("End");
+
+// //Error Handling
+// try{
+// console.log(userName);
+// } 
+// catch(error){
+// console.log("User Not Found");
+// }
+
+//throw 
+let age = 16;
+if (age < 18) {
+    throw new Error("Not Eligible");
+}
