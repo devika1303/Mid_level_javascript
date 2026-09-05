@@ -81,11 +81,20 @@
 //     display.textContent=count;
 // });
 
+//callbacks
+function greet() { 
+    console.log("Good Morning"); 
+}
+greet();
 
-console.log("Start");
+//after some time executes-setTimeout
+function greets() { 
+    console.log("Timeout"); 
+}
+setTimeout(greets, 3000);
 
-setTimeout(() => {
-    console.log("Timer");
-}, 2000);
-
-console.log("End");
+//setInterval
+function greeti() { 
+    console.log("Timeout"); 
+}
+setInterval(greeti, 3000);
