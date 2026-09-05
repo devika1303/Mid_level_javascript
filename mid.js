@@ -32,6 +32,9 @@
 // btn.addEventListener("click", function() {
 //     heading.innerText = "Button Clicked!";
 // });
+
+
+
 // // event types
 // btn.addEventListener("click", function(event){
 //     console.log(event.type);
@@ -70,10 +73,19 @@
 //     document.body.classList.toggle("dark")
 // });
 
-//counter app
-let count = 0;
-const display = document.getElementById("count");
-document.getElementById("add").addEventListener("click", () => {
-    count++;
-    display.textContent=count;
-});
+// //counter app
+// let count = 0;
+// const display = document.getElementById("count");
+// document.getElementById("add").addEventListener("click", () => {
+//     count++;
+//     display.textContent=count;
+// });
+
+
+console.log("Start");
+
+setTimeout(() => {
+    console.log("Timer");
+}, 2000);
+
+console.log("End");
