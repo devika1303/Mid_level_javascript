@@ -86,15 +86,20 @@ function greet() {
     console.log("Good Morning"); 
 }
 greet();
-
 //after some time executes-setTimeout
 function greets() { 
     console.log("Timeout"); 
 }
 setTimeout(greets, 3000);
-
-//setInterval
+//setinterval
 function greeti() { 
-    console.log("Timeout"); 
+    console.log("TimeInterval"); 
 }
 setInterval(greeti, 3000);
+
+//function intlo value of variable
+function greeting(){
+    console.log("hello devika");
+}
+let message = greeting;
+message();
