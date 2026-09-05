@@ -81,25 +81,32 @@
 //     display.textContent=count;
 // });
 
-//callbacks
-function greet() { 
-    console.log("Good Morning"); 
-}
-greet();
-//after some time executes-setTimeout
-function greets() { 
-    console.log("Timeout"); 
-}
-setTimeout(greets, 3000);
-//setinterval
-function greeti() { 
-    console.log("TimeInterval"); 
-}
-setInterval(greeti, 3000);
+// //callbacks
+// function greet() { 
+//     console.log("Good Morning"); 
+// }
+// greet();
+// //after some time executes-setTimeout
+// function greets() { 
+//     console.log("Timeout"); 
+// }
+// setTimeout(greets, 3000);
+// //setinterval
+// function greeti() { 
+//     console.log("TimeInterval"); 
+// }
+// setInterval(greeti, 3000);
 
-//function intlo value of variable
-function greeting(){
-    console.log("hello devika");
-}
-let message = greeting;
-message();
+// //function into value of variable
+// function greeting(){
+//     console.log("hello devika");
+// }
+// let message = greeting;
+// message();
+
+//callback queue
+console.log("Start");
+setTimeout(() => {
+console.log("Timer");
+}, 3000);
+console.log("End");
