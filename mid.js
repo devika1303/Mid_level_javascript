@@ -119,8 +119,24 @@
 // console.log("User Not Found");
 // }
 
-//throw 
-let age = 16;
-if (age < 18) {
-    throw new Error("Not Eligible");
-}
+// //throw 
+// let age = 16;
+// if (age < 18) {
+//     throw new Error("Not Eligible");
+// }
+
+
+// //clearinterval
+// setInterval(function(){
+// console.log("Welcome Students");
+// }, 3000);
+
+
+let count = 0;
+let timer = setInterval(() => {
+    console.log("Hello Devika");
+    count++;
+    if (count === 5) {
+        clearInterval(timer);
+    }
+}, 1000);
