@@ -125,18 +125,28 @@
 //     throw new Error("Not Eligible");
 // }
 
-
+// //TIMERS
 // //clearinterval
 // setInterval(function(){
 // console.log("Welcome Students");
 // }, 3000);
 
+// //clear interval through condtion
+// let count = 0;
+// let timer = setInterval(() => {
+//     console.log("Hello Devika");
+//     count++;
+//     if (count === 5) {
+//         clearInterval(timer);
+//     }
+// }, 1000);
 
-let count = 0;
-let timer = setInterval(() => {
-    console.log("Hello Devika");
-    count++;
-    if (count === 5) {
-        clearInterval(timer);
+//countdown timer
+let time = 5
+let timerr = setInterval(() {
+    console.log(time);
+    time--;
+    if(time<0){
+        clearInterval(timerr);
     }
-}, 1000);
+}, 1000) 
