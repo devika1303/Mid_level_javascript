@@ -151,9 +151,14 @@
 //     }
 // }, 1000) 
 
-//local storage
-localStorage.setItem("name", "Devika");
-localStorage.setItem("age", 21);
-localStorage.setItem("education", "BTech");
-localStorage.setItem("branch", "ECE");
+// //local storage
+// localStorage.setItem("name", "Devika");
+// localStorage.setItem("age", 21);
+// localStorage.setItem("education", "BTech");
+// localStorage.setItem("branch", "ECE");
+
+//local storage methods
+localStorage.getItem("name");
+localStorage.removeItem("name");
+localStorage.clear();
 
