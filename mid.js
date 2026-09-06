@@ -157,8 +157,14 @@
 // localStorage.setItem("education", "BTech");
 // localStorage.setItem("branch", "ECE");
 
-//local storage methods
-localStorage.getItem("name");
-localStorage.removeItem("name");
-localStorage.clear();
+// //local storage methods
+// localStorage.getItem("name");
+// localStorage.removeItem("name");
+// localStorage.clear();
+
+//notes app
+let input = document.getElementById("note");
+document.getElementById("save").addEventListener("click", () => {
+    localStorage.setItem("note", input.value);
+});
 
