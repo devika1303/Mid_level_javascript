@@ -170,11 +170,14 @@
 // let data = localStorage.getItem("note");
 // console.log(data);
 
-//shopping list app
-let input = document.getElementById("item");
-document.getElementById("save").addEventListener("click", () => {
-    localStorage.setItem("shoppingItem", input.value);
-});
-let item = localStorage.getItem("shoppingItem");
-console.log(item);
+// //shopping list app
+// let input = document.getElementById("item");
+// document.getElementById("save").addEventListener("click", () => {
+//     localStorage.setItem("shoppingItem", input.value);
+// });
+// let item = localStorage.getItem("shoppingItem");
+// console.log(item);
 
+//To-DO App
+let tasks = ["HTML", "CSS", "JavaScript"];
+localStorage.setItem("tasks", JSON.stringify(tasks));
