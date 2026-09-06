@@ -141,12 +141,19 @@
 //     }
 // }, 1000);
 
-//countdown timer
-let time = 5
-let timerr = setInterval(() {
-    console.log(time);
-    time--;
-    if(time<0){
-        clearInterval(timerr);
-    }
-}, 1000) 
+// //countdown timer
+// let time = 5
+// let timerr = setInterval(() => {
+//     console.log(time);
+//     time--;
+//     if(time<0){
+//         clearInterval(timerr);
+//     }
+// }, 1000) 
+
+//local storage
+localStorage.setItem("name", "Devika");
+localStorage.setItem("age", 21);
+localStorage.setItem("education", "BTech");
+localStorage.setItem("branch", "ECE");
+
