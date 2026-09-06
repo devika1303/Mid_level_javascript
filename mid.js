@@ -162,9 +162,19 @@
 // localStorage.removeItem("name");
 // localStorage.clear();
 
-//notes app
-let input = document.getElementById("note");
+// //notes app
+// let input = document.getElementById("note");
+// document.getElementById("save").addEventListener("click", () => {
+//     localStorage.setItem("note", input.value);
+// });
+// let data = localStorage.getItem("note");
+// console.log(data);
+
+//shopping list app
+let input = document.getElementById("item");
 document.getElementById("save").addEventListener("click", () => {
-    localStorage.setItem("note", input.value);
+    localStorage.setItem("shoppingItem", input.value);
 });
+let item = localStorage.getItem("shoppingItem");
+console.log(item);
 
