@@ -81,6 +81,10 @@
 //     display.textContent=count;
 // });
 
+
+
+
+
 // //callbacks
 // function greet() { 
 //     console.log("Good Morning"); 
@@ -124,6 +128,7 @@
 // if (age < 18) {
 //     throw new Error("Not Eligible");
 // }
+
 
 // //TIMERS
 // //clearinterval
@@ -171,13 +176,66 @@
 // console.log(data);
 
 // //shopping list app
-// let input = document.getElementById("item");
+// let inputs = document.getElementById("item");
 // document.getElementById("save").addEventListener("click", () => {
-//     localStorage.setItem("shoppingItem", input.value);
+//     localStorage.setItem("shoppingItem", inputs.value);
 // });
 // let item = localStorage.getItem("shoppingItem");
 // console.log(item);
 
-//To-DO App
-let tasks = ["HTML", "CSS", "JavaScript"];
-localStorage.setItem("tasks", JSON.stringify(tasks));
+// //To-DO App
+// let tasks = ["HTML", "CSS", "JavaScript"];
+// localStorage.setItem("tasks", JSON.stringify(tasks));
+
+// STRING METHODS
+//includes
+let email = "student@gmail.com";
+console.log(email.includes("@"));
+
+let course = "JavaScript";
+console.log(course.includes("Java"));
+console.log(course.includes("Python")); 
+
+//split()
+let skills = "HTML,CSS,JavaScript,React";
+let result = skills.split(",");
+console.log(result);
+
+//length
+let names = "Devika";
+console.log(names.length);
+
+//replace
+let text = "I Like Java";
+console.log(text.replace("Java", "JavaScript"));
+
+//trim
+let username = "  Devika  ";
+console.log(username.trim());
+
+//Email validation
+let mail = "devika@gmail.com";
+if (mail.includes("@") && mail.includes(".com")) {
+    console.log("Valid");
+} else {
+    console.log("Invalid");
+}
+
+
+//Regex patterns
+//numbers only
+let pattern = /^[0-9]+$/;
+console.log(pattern.test("12345"));
+console.log(pattern.test("123abc")); 
+
+//letters only
+let letters = /^[A-Za-z]+$/;
+console.log(letters.test("devi12"));
+
+//mobile number
+const mobileRegex = /^[6-9]\d{9}$/;
+console.log(mobileRegex.test("6223447810"));
+
+//user name regex
+const usernameRegex = /^[A-Za-z0-9]{5,}$/;
+console.log(usernameRegex.test("devika123"))
